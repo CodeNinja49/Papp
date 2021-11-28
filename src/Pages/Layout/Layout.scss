@@ -1,0 +1,152 @@
+.Drawer {
+    &_spanText {
+        font-size: 0.6rem;
+        margin-top: 8px;
+    }
+    &_blankSpace {
+        display: flex;
+        align-items: center;
+        padding-left: 10.4px;
+        margin-bottom: 64px;
+        padding-right: 10.4px;
+    }
+    &_image {
+        display: flex;
+        margin-top: 24px;
+        justify-content: space-around;
+        align-items: center;
+    }
+}
+
+.MainListItems{
+
+    padding-right: 13px !important;
+    padding-left: 3px !important;
+
+    &_ListItem {
+        padding-top: 0 !important;
+        padding-bottom: 0 !important;
+    }
+    &_ItemIcon {
+        margin-top: -14px;
+        min-width: 46px !important;
+        margin-left: 10px;
+    }
+    &_subItemIcon{
+        height: 20px;
+        width: 32px;
+        border-left: 1px dashed white;
+        border-bottom: 1px dashed white;
+    }
+    .MuiListItem-root {
+        margin-top: 5px;
+    }
+    .MuiListItem-root.Mui-selected{
+       
+        
+        margin-left: 5px;
+        margin-right: 5px;
+        border-radius: 10px;
+        background-color: #fff;
+        color: #3F4752;
+
+        svg {
+            fill: #3F4752;
+            height: 25px;
+            width: auto;
+        }
+        &:hover{
+            background-color: #fff;
+            color: #3F4752;
+            svg {
+                fill: #3F4752;
+            }
+        }
+    }
+    .MuiListItem-button {
+        margin-left: 5px;
+        margin-right: 5px;
+        border-radius: 10px;
+        white-space: normal;
+        svg {
+            fill: #fff;
+            height: 25px;
+            width: auto;
+        }
+
+        &:hover{
+            background-color: rgba(255, 255, 255, 0.4);
+            color: #3F4752;
+            svg {
+                fill: #3F4752;
+            }
+        }
+    }
+    .MainListItems_ListItem &_subList {
+        &_ListItem {
+            margin-top: 5px;
+        }
+        &_button {
+            // background-color: pink; */
+            min-height: 30px;
+            width: 100%;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            padding-left: 11px;
+            word-wrap: anywhere;
+            white-space: normal;
+            text-align: left;
+            &:hover {
+                background-color: #fff;
+                color: #3f4752;
+                opacity: 0.4;
+            }
+            &.SubListItem_Selected {
+                background-color: #fff;
+                color: #3f4752;
+                &:hover {
+                    background-color: #fff;
+                    color: #3f4752;
+                    opacity: 1;
+                }
+            }
+        }
+    }
+}
+
+.Dashboard {
+    &_Queries {
+        display: flex;
+        align-self: center;
+        align-items: center;
+        margin-top: auto;
+        margin-bottom: 40px;
+        img {
+            height: 35px;
+        }
+        &_span {
+            font-size: 0.6rem;
+            display: flex;
+            flex-direction: column;
+        }
+    }
+    &_Appbar{
+        &_userDetails {
+            display: flex;
+            flex-direction: column;
+            color: #3F4752;
+            margin-left: 8px;
+            margin-right: 2px;
+            text-align: left;
+        }
+    }
+}
+
+.vertical_hr {
+    border-left:1px solid #707070;
+    height:37px;
+    width: 30px;
+    margin-left: 23px;
+}

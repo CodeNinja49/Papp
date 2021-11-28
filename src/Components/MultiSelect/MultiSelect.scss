@@ -1,0 +1,60 @@
+.MultiSelect {
+    width: 100%;
+    label.Mui-focused {
+        color: #3F4752;
+    }
+    .MuiFormLabel-root {
+        color: #3F4752;
+    }
+    .MuiFormLabel-root.Mui-focused {
+        color: #3F4752;
+    }
+    .MuiInput-underline.Mui-focused:after {
+        content: none;
+    }
+    &_input {
+        label {
+            font-size: 17px;
+            .MuiInputLabel-asterisk {
+                color: #FF00008A;
+            }
+        }
+        input::-webkit-input-placeholder { /* Edge */
+            font-size: 13px;
+          }
+          
+          input:-ms-input-placeholder { /* Internet Explorer */
+            font-size: 13px;
+          }
+          
+          input::placeholder {
+            font-size: 13px;
+          }
+    }
+    .MuiAutocomplete-popupIndicator {
+        margin-top: -9px;
+    }
+    .MuiInput-underline:before {
+        border-bottom: 1px solid #3f4752;
+    }
+}
+
+.MuiAutocomplete-popper {
+    background-color: white !important;
+}
+.MuiAutocomplete-listbox {
+    background-color: white !important;
+}
+
+.MuiAutocomplete-option.Button-Option{
+    &:active {
+        background-color: white;
+    }
+
+}
+.MuiAutocomplete-clearIndicator {
+    display: none !important;
+}
+.MuiAutocomplete-endAdornment {
+    margin-top: -5px;
+}

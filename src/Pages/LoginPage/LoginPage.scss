@@ -1,0 +1,62 @@
+.LoginPage {
+    height: 100vh;
+    &_Left {
+       background-color: #3F4752;
+    }
+    &_LeftGrid {
+        display: flex;
+        flex-direction: column;
+        /* justify-content: center; */
+        align-items: center;
+       &_img {
+           width: 30%;
+           margin-top: 10vh;
+       }
+       &_body {
+        max-width: 85%;
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        margin-top: 8vh;
+
+           span {
+               display: flex;
+               margin-top: 10px;
+               color: white;
+               &:before {
+                content: '>';
+                margin-right: 10px;
+               }
+           }
+           @media (min-width: 768px) and (max-width: 1000px) and (orientation: landscape) {
+            font-size: 12px;         
+          }
+       }
+    }
+
+    &_Title {
+        font-size: 1.1rem;
+        color: white;
+        font-weight: bold;
+        margin-top: 60px;    
+        @media (min-width: 768px) and (max-width: 1000px) and (orientation: landscape) {
+            margin-top: 15px;   
+            font-size: 0.8rem;         
+          }
+    }
+    &_checkbox {
+        float: left;
+    }
+    &_msg {
+        font-size: 0.8rem !important;
+    }
+    &_emailUs {
+        color: #114EFF;
+        font-weight: bold;
+    }
+    &_errorMsg {
+        margin: 0;
+        margin-bottom: -15px;
+        color: #c30;
+    }
+}

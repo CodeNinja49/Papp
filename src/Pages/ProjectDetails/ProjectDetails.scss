@@ -1,0 +1,270 @@
+.ProjectDetails {
+    width: 100%;
+    &_item {
+        display: flex;
+        border: 1px solid #B4B4B4;
+        align-items: stretch;
+
+        &_header {
+            display: flex;
+            align-items: center;
+            width: 100%;
+        }
+
+        .MetaInput {
+            .MuiOutlinedInput-root {
+                height: 30px;
+                font-size: 13px;
+            }
+        }
+        .TextContainer {
+            display: flex;
+            align-items: center;
+            border: 1px solid #3F4752;
+            border-radius: 4px;
+            min-height: 30px;
+            background-color: #f0f0f0;
+            font-weight: bold;
+            opacity: 0.8;
+            &_icon {
+                margin-left: 1px;
+                margin-right: 7px;
+                cursor: pointer;
+            }
+        }
+        .GreyCheckbox {
+            svg {
+                font-size: 1.50rem;
+            }
+        }
+    }
+    &_itemRightDetails {
+        // width: 100%;
+        border-left: 1px solid #B4B4B4;
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        padding: 10px;
+        font-size: 13px;
+
+        .carousel {
+            text-align: center;
+            &_paper {
+                width: 200px !important;
+                display: flex !important;
+                align-items: center;
+                justify-content: center;
+                height: 250px;
+                border: 1px solid #3F4752;
+            }
+            .slick-arrow.slick-prev {
+                fill: black;
+                margin-left: 10px;
+            }
+            .slick-arrow.slick-next {
+                fill: black;
+                transform: rotate(180deg);
+                margin-right: 10px;
+            }
+            .slick-list {
+                margin-left: 35px;
+            }
+        }
+    }
+    &_showMoreText {
+        color: #31708f;
+        text-decoration: none;
+        display: flex;
+        float: right;
+    }
+    &_noResult {
+        padding: 24px;
+        font-size: 22px;
+        text-align: center;
+    }
+    &_abstractData {
+        margin-top: 16px;
+        margin-bottom: 8px;
+    }
+
+    .ProjectsHeader {
+        &_title {
+            color: rgb(63, 71, 82);
+            font-size: 20px;
+            text-align: left;
+            font-weight: bold;
+        }
+        &_count {
+            text-align: left;
+            font-weight: bold;
+            margin-bottom: 8px;
+        }
+        .MuiSwitch-colorSecondary.Mui-checked {
+            color: #3f4752;
+        }
+        .MuiSwitch-colorSecondary.Mui-checked + .MuiSwitch-track {
+            background-color: #3F4752;
+        }
+    }
+    .ProjectDetailsTable {
+        width: 100%;
+        border-color: grey;
+        border-spacing: 0;
+        border-collapse: collapse;
+        thead {
+            background-color: #f0f0f0;
+            color: #333333;
+            padding: 8px;
+            height: 42px;
+        }
+        tbody tr {
+            height: 35px;
+        }
+    }
+    th, td {
+        border: 1px solid rgb(221, 221, 221);
+      }
+}
+
+.CustomizedDialogs {
+    .MuiDialog-paper {
+        border-radius: 18px;
+        background-color: #f6f7fb;
+    }
+}
+
+.ExportPatent {
+    .MuiDialog-paper {
+        border-radius: 18px;
+        background-color: #fcfcff;
+    }
+    & &_rightgrid {
+        background-color: #f2f3fb;
+        padding: 20px;
+        border-radius: 18px;
+        font-size: 14px;
+    }
+    &_FormControlLabel {
+        .MuiTypography-body1 {
+            font-size: 13px;
+        }
+    }
+    & &_activeButtonTab {
+        background-color: #f2f3fb;
+        border-radius: 12px;
+        box-shadow: 0px 3px 10px #00000029;
+        border: 0;
+        min-width: 214px;
+        font-weight: bold;
+    }
+    & &_buttonTab {
+        border: 0;
+        border-radius: 12px;
+        min-width: 214px;
+        font-weight: bold;
+    }
+    .SharePatents {
+        padding: 40px;
+        padding-bottom: 15px;
+        &_paper {
+            padding: 20px;
+            height: 100%;
+            cursor: pointer;
+            &.active {
+                background-color: #3F4651;
+                color: white;
+                .SharePatents_title {
+                    color: white;
+                }
+                .SharePatents_count {
+                    color: white;
+                }
+                .SharePatents_details {
+                    color: white;
+                }
+                .SharePatents_Btn {
+                    border-color: white;
+                }
+                .MuiInput-root {
+                    color: white;
+                }
+                .MuiInput-underline::after {
+                    border-color: white;
+                }
+                .MuiInput-underline::before {
+                    border-color: #B4B4B4;
+                }
+            }
+        }
+        &_centerBox {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        &_title {
+            font-weight: Bold;
+            color: #3F4651;
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+        &_count {
+            color: #3F4651;
+            opacity: 0.9;
+            margin-bottom: 18px;
+        }
+        &_details {
+            text-align: center;
+            color: #3F4651;
+            opacity: 0.6;
+            margin-bottom: 18px;
+        }
+        &_Btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 33px;
+            border: 1px solid #3F4752;
+            border-radius: 10px;
+            padding-left: 15px;
+            padding-right: 15px;
+            opacity: 0.8;
+        }
+
+        
+    }
+}
+.verticalHR {
+    border-left: 1px solid #3F4752;
+    opacity: 0.5;
+}
+
+.concept1 {
+    background-color: #FF0000;
+    color: #fff;
+    font-weight: bold;
+}
+.concept2 {
+    background-color: #007B00;
+    color: #fff;
+    font-weight: bold;
+}
+.concept3 {
+    background-color: #0031FF;
+    color: #fff;
+    font-weight: bold;
+}
+.concept4 {
+    background-color: #A58B00;
+    color: #fff;
+    font-weight: bold;
+}
+.concept5 {
+    background-color: #C400D5;
+    color: #fff;
+    font-weight: bold;
+}
+.concept6 {
+    background-color: #001E9F;
+    color: #fff;
+    font-weight: bold;
+}

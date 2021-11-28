@@ -1,0 +1,98 @@
+.PatentUpload {
+    flex-grow: 1;
+
+    &_Paper {
+        margin-top: 40px;
+        padding: 20px;
+        padding-top: 40px;
+        padding-bottom: 10px;
+    }
+    &_FormatSelect {
+        text-align: left;
+        height: 38px;
+    }
+    &_Chipinput {
+        // height: 38px;
+        div {
+            margin-top: 0 !important;
+            max-width: 100%;
+        }
+        textarea {
+            resize: both;
+        }
+    }
+    .PatentResults {
+        padding: 20px;
+        margin-top: 30px;
+        &_Title {
+            font-size: 18px;
+            font-weight: bold;
+            text-align: left;
+            color: #3F4752;
+            display: block;
+        }
+        &_SubTitle {
+            font-size: 15px;
+            text-align: left;
+            color: #3F4752;
+            display: block;
+            margin-bottom: 10px;
+        }
+        .MuiTabs-root {
+            // box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.2);
+        }
+        &_Tab {
+            background-color: #e4e6ee;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            width: 33%;
+            max-width: initial;
+            transition: background-color 0.6s ease;
+            // border-radius: 10px;
+            &.Mui-selected {
+                background-color: white;
+                transition: background-color 1s;
+                .PatentResults_Tab_ArrowRight {
+                    transform: rotate(90deg);
+                }
+            }
+            &_Label {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+            &_Text {
+                display: flex;
+                flex-direction: column;
+                margin-left: 14px;
+                /* margin-top: -3px; */
+                text-align: left;
+            }
+            &--labelTitle {
+                color: #757575;
+                font-weight: bold;
+                text-transform: none;
+            }
+            &--label {
+                color: #757575;
+                text-transform: none;
+            }
+            &_ArrowRight {
+                margin-left: 15px;
+            }
+        }
+        .MuiTabs-indicator {
+            background-color: inherit;
+        }
+
+        .MuiTableBody-root .MuiTableCell-root {
+            border-bottom: none;
+            padding-top: 5px;
+            padding-bottom: 5px;
+        }
+        .MuiPagination-ul {
+            justify-content: center;
+            margin-top: 15px;
+        }
+    }
+}

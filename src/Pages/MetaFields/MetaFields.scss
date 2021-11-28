@@ -1,0 +1,37 @@
+.MetaFields {
+    flex-grow: 1;
+
+    &_resultPaper {
+        margin-top: 25px;
+        padding: 18px;
+        &_title {
+            font-size: 17px;
+            font-weight: bold;
+            text-align: left;
+            margin: 0;
+        }
+    }
+    .editIcon {
+        height: 24px;
+        width: 24px;
+    }
+    & &_resultType {
+        background-color: #f6f7fb;
+        padding: 18px;
+        margin-top: 20px;
+        p {
+            margin: 0;
+            text-align: left;
+        }
+        &_buttonGroup {
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+        }
+    }
+    .renderTextField {
+        .MuiInput-root {
+            height: 48px;
+        }
+    }
+}

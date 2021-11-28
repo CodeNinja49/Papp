@@ -1,0 +1,120 @@
+.Filter {
+    &_country {
+        width: 100%;
+        label.Mui-focused {
+            color: #3F4752;
+        }
+        .MuiFormLabel-root {
+            color: #3F4752;
+        }
+        .MuiFormLabel-root.Mui-focused {
+            color: #3F4752;
+        }
+        .MuiInput-underline.Mui-focused:after {
+            content: none;
+        }
+
+        .MuiAutocomplete-popupIndicator {
+            margin-top: -9px;
+        }
+        .MuiInput-underline:before {
+            border-bottom: 1px solid #3f4752;
+        }
+        &_textField {
+            label {
+                font-size: 19px;
+                .MuiInputLabel-asterisk {
+                    color: #FF00008A;
+                }
+            }
+            input::-webkit-input-placeholder { /* Edge */
+                font-size: 13px;
+              }
+              
+              input:-ms-input-placeholder { /* Internet Explorer */
+                font-size: 13px;
+              }
+              
+              input::placeholder {
+                font-size: 13px;
+              }
+        }
+    }
+   .Filter &_ToggleButtonGroup {
+        height: 28px;
+        margin-left: 8%;
+        &_LeftToggle {
+            border-top-left-radius: 15px;
+            border-bottom-left-radius: 15px;
+        }
+        &_RightToggle {
+            border-top-right-radius: 15px;
+            border-bottom-right-radius: 15px;
+        }
+        .MuiToggleButton-root.Mui-selected {
+            background-color: #3F4752;
+            color: white;
+        }
+    }
+
+    &_title {
+        font-size: 14px;
+        color: #3F4752;
+        min-width: 100px;
+        span {
+            color: #FF00008A;
+        }
+    }
+
+    div[class*="WAMuiChipInput-underline-"]{
+        &:before {
+            border-bottom: 1px solid #3f4752;
+        }
+        &:after {
+            // border-bottom: 2px solid #3f4752;
+        }
+    }
+    .WAMuiChipInput-underline-62 {
+        &:before {
+            border-bottom: 1px solid #3f4752;
+        }
+        &:after {
+            border-bottom: 2px solid #3f4752;
+        }
+    }
+    .MuiInput-underline {
+        &:before {
+            border-bottom: 1px solid #3f4752;
+        }
+        &:after {
+            border-bottom: 2px solid #3f4752;
+        }
+    }
+
+    .MuiInputBase-root {
+        font-size: 14px !important;
+    }
+    .MuiChip-clickable {
+        max-width: 100%;
+    }
+}
+
+.MuiAutocomplete-popper {
+    background-color: white !important;
+}
+.MuiAutocomplete-listbox {
+    background-color: white !important;
+}
+
+.MuiAutocomplete-option.Button-Option{
+    &:active {
+        background-color: white;
+    }
+
+}
+.MuiAutocomplete-clearIndicator {
+    display: none !important;
+}
+.MuiAutocomplete-endAdornment {
+    margin-top: -5px;
+}
